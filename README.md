@@ -1,7 +1,9 @@
 # Docker 使用教程
 一、运行如下命令一键启动并创建服务
 
-`curl https://raw.githubusercontent.com/TT-IPIP/qd/main/docker_start.sh | bash`  
+```
+curl https://ghproxy.com/https://raw.githubusercontent.com/TT-IPIP/qd/main/docker_start.sh | bash
+```
 运行成功会自动创建如下目录结构, 并成功启动 docker 服务。
 
 ```
@@ -48,7 +50,9 @@ docker-compose 安装
 `pip3 install docker-compose`  
 
 方式二  
-`sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`  
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
 `sudo chmod +x /usr/local/bin/docker-compose`  
 通过 `docker-compose version` 查看 docker-compose 版本，确认是否安装成功。
 
@@ -58,7 +62,7 @@ docker-compose 安装
 `docker-compose stop` 停止容器  
 `docker-compose restart` 重启容器  
 `docker-compose down` 停止并删除容器  
-`docker exec -it dailycheckin sh 进入 docker`  
+`docker exec -it dailycheckin sh` 进入 docker  
 
 
 # 原文
